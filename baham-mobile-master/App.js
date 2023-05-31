@@ -16,11 +16,14 @@ export default function App() {
     <NavigationContainer>
       <View style={styles.container}>
         <AppHeader />
+           {/*added Drawer Navigation*/}
           <Drawer.Navigator initialRouteName='Login' screenOptions={{headerStyle: {backgroundColor: 'lightyellow'}}}>
             <Drawer.Screen name="Login" component={Login} />
             <Drawer.Screen name="Menu" component={Menu} />
-            <Drawer.Screen name="About us" component={AboutUsScreen}/>
-            <Drawer.Screen name="Setting" component={Setting}/>
+         {/*added about us page*/}
+          <Drawer.Screen name="About us" component={AboutUsScreen}/>
+         {/*added setting*/}
+         <Drawer.Screen name="Setting" component={Setting}/>
             
           </Drawer.Navigator>
         <AppFooter />
